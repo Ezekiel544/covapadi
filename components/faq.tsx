@@ -1,0 +1,201 @@
+'use client';
+
+import { useState } from 'react';
+
+export default function FAQ() {
+  const [openIndex, setOpenIndex] = useState(0);
+
+const faqs = [
+  {
+    question: 'What devices can customers buy through Covapadi?',
+    answer: 'Covapadi is focused on gadgets such as phones, laptops, tablets, and other eligible devices. The exact device categories available will depend on the merchant and the financing or protection options connected to the transaction.',
+  },
+  {
+    question: 'How does Covapadi work?',
+    answer: 'Covapadi helps merchants connect customers to gadget financing and protection in one process. Instead of handling these as separate steps, the customer can move through a clearer and more guided journey that makes it easier to complete the purchase.',
+  },
+  {
+    question: 'Does Covapadi provide the financing directly?',
+    answer: 'Covapadi works as the distribution and access layer. Financing is provided through partner-backed arrangements connected to the purchase flow, while Covapadi helps make the process easier for merchants and customers.',
+  },
+  {
+    question: 'Is protection included in the process?',
+    answer: 'Protection can be included as part of the gadget purchase journey, depending on the product structure and merchant setup. Customers will be shown the relevant details clearly during the process.',
+  },
+  {
+    question: 'How do I file a claim if my device is damaged or stolen?',
+    answer: 'Claims can be initiated by following the support and claims process attached to the protection plan connected to the purchase. This usually involves providing device details, customer information, and the reason for the claim, along with any required supporting documents.',
+  },
+  {
+    question: 'How long does it take to process a claim?',
+    answer: 'Claim timelines depend on the type of claim, the plan terms, and the completeness of the information submitted. Once all required details are provided, the claim will be reviewed according to the applicable process.',
+  },
+  {
+    question: 'Is there a waiting period before protection becomes active?',
+    answer: 'The start date of protection depends on the terms of the selected plan. Any activation timeline, waiting period, or related condition will be shown clearly before completion.',
+  },
+  {
+    question: 'Can a customer access financing for more than one device?',
+    answer: 'This depends on the product structure, customer eligibility, and the terms attached to the financing arrangement. The available options will be shown during the process.',
+  },
+  {
+    question: 'What counts as accidental damage? Does it cover water damage?',
+    answer: 'Accidental damage generally refers to sudden and unintended physical damage, such as drops, cracks, or similar incidents. Water damage may or may not be included depending on the plan. Customers should review the plan details carefully to understand what is covered and what is excluded.',
+  },
+  {
+    question: 'What happens if a claim is rejected?',
+    answer: 'If a claim is rejected, the reason will usually be communicated based on the plan terms and the information submitted. Customers can then contact support for clarification or guidance on the next available step.',
+  },
+  {
+    question: 'How do I cancel or make changes to my plan?',
+    answer: 'Any change such as cancellation or plan update depends on the terms of the protection attached to the purchase. Customers can contact support for guidance on what options are available.',
+  },
+  {
+    question: 'Important note on terms',
+    answer: 'Financing, protection, claims, activation timelines, and other terms may vary depending on the merchant, the selected device, and the applicable product terms. Customers should review all details carefully before completing a purchase.',
+  },
+];
+  return (
+    <>
+      <style>{`
+        .faq-section {
+          background: #edecea;
+          padding: 60px;
+          font-family: 'Space Grotesk', sans-serif;
+          padding-bottom: 230px;
+        }
+
+        .faq-badge {
+          display: inline-block;
+          border: 1px solid rgba(0,0,0,0.3);
+          color: #111;
+          font-size: 11px;
+          font-weight: 600;
+          letter-spacing: 0.12em;
+          text-transform: uppercase;
+          padding: 7px 14px;
+          border-radius: 4px;
+          margin-bottom: 24px;
+           border-radius: 0px 20px 0px 0px;
+        }
+
+        .faq-heading {
+          font-size: clamp(36px, 5vw, 56px);
+          font-weight: 800;
+          line-height: 1.1;
+          color: #111;
+          margin-bottom: 48px;
+        }
+
+        /* Centered container for the accordion */
+        .faq-list {
+          max-width: 560px;
+          margin: 0 auto;
+          display: flex;
+          flex-direction: column;
+          gap: 8px;
+        }
+
+        .faq-item {
+          border: 1px solid rgba(0,0,0,0.25);
+          background: #edecea;
+        }
+
+        .faq-trigger {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 20px 24px;
+          background: none;
+          border: none;
+          cursor: pointer;
+          font-family: 'Space Grotesk', sans-serif;
+          text-align: left;
+          gap: 16px;
+        }
+
+        .faq-trigger span {
+          font-size: 15px;
+          font-weight: 700;
+          color: #111;
+          line-height: 1.4;
+        }
+
+        .faq-chevron {
+          flex-shrink: 0;
+          width: 20px;
+          height: 20px;
+          color: #111;
+          transition: transform 0.2s ease;
+        }
+
+        .faq-chevron.open {
+          transform: rotate(180deg);
+        }
+
+        .faq-answer {
+          padding: 0 24px 20px 24px;
+          font-size: 14px;
+          line-height: 1.75;
+          color: #444;
+          border-top: 1px solid rgba(0,0,0,0.1);
+          padding-top: 16px;
+          margin-top: 0;
+        }
+
+        @media (max-width: 768px) {
+          .faq-section {
+            padding: 48px 24px;
+          }
+
+          .faq-heading {
+            font-size: clamp(32px, 8vw, 48px);
+            margin-bottom: 36px;
+          }
+
+          .faq-list {
+            max-width: 100%;
+          }
+
+          .faq-trigger span {
+            font-size: 15px;
+          }
+        }
+      `}</style>
+
+      <section className="faq-section" id="faq">
+        <span className="faq-badge">FAQ</span>
+        <h2 className="faq-heading">Frequently ask questions</h2>
+
+        <div className="faq-list">
+          {faqs.map((faq, i) => (
+            <div className="faq-item" key={i}>
+              <button
+                className="faq-trigger"
+                onClick={() => setOpenIndex(openIndex === i ? -1 : i)}
+              >
+                <span>{faq.question}</span>
+                <svg
+                  className={`faq-chevron ${openIndex === i ? 'open' : ''}`}
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              </button>
+
+              {openIndex === i && (
+                <p className="faq-answer">{faq.answer}</p>
+              )}
+            </div>
+          ))}
+        </div>
+      </section>
+    </>
+  );
+}

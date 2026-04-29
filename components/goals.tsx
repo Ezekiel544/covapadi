@@ -9,7 +9,6 @@ export default function Goals() {
           padding: 60px 60px 0px 60px;
           font-family: 'Space Grotesk', sans-serif;
           overflow: hidden;
-          
         }
 
         .goals-badge {
@@ -35,15 +34,13 @@ export default function Goals() {
           max-width: 600px;
         }
 
-        /* The dark card — flush left & bottom, only top-right rounded */
         .goals-card {
           background: #1e3a2f;
-          border-radius: 0 120px 0 0; /* only top-right corner */
+          border-radius: 0 120px 0 0;
           padding: 80px 60px 80px 60px;
-          // margin-left: -60px; 
           width: calc(75% + 60px);
-          margin-right:60px;
-        } 
+          margin-right: 60px;
+        }
 
         .goals-card p {
           font-size: clamp(18px, 2vw, 24px);
@@ -55,14 +52,16 @@ export default function Goals() {
 
         @media (max-width: 768px) {
           .goals-section {
-            padding: 48px 24px 0px 24px;
+            padding: 48px 0px 0px 24px;
+            overflow: hidden;
           }
 
           .goals-card {
             border-radius: 0 80px 0 0;
-            padding: 60px 24px 60px 24px;
-            margin-left: -24px;
-            width: calc(100% + 24px);
+            padding: 48px 24px 60px 24px;
+            margin-left: 0;
+            width: 100%;
+            margin-right: 0;
           }
 
           .goals-card p {
@@ -72,15 +71,12 @@ export default function Goals() {
       `}</style>
 
       <section className="goals-section">
-        {/* Badge */}
         <span className="goals-badge">Services</span>
 
-        {/* Heading */}
         <h2 className="goals-heading">
           Our goal is to protect what<br />you care about most
         </h2>
 
-        {/* Dark card — flush left & bottom, top-right curve only */}
         <div className="goals-card">
           <p>
             This is the space to introduce visitors to the business or brand. Briefly explain who&apos;s behind it, what it does and what makes it unique. Share its core values and what this site has to offer.

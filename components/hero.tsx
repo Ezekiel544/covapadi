@@ -42,6 +42,7 @@ export default function Hero() {
           padding-right: 40px;
           background: #edecea;
           font-family: 'Space Grotesk', sans-serif;
+          overflow: hidden; /* ← add this */
         }
 
         .hero-inner {

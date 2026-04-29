@@ -55,6 +55,7 @@ export default function Testimonials() {
           background: #edecea;
           padding: 60px;
           font-family: 'Space Grotesk', sans-serif;
+            overflow: hidden; 
         }
 
         .testimonials-badge {

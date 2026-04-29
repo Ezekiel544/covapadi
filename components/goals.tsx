@@ -52,16 +52,25 @@ export default function Goals() {
 
         @media (max-width: 768px) {
           .goals-section {
-            padding: 48px 0px 0px 24px;
+            padding: 48px 0px 0px 0px; /* remove ALL side padding */
             overflow: hidden;
+          }
+
+          .goals-badge {
+            margin-left: 24px; /* indent badge manually */
+          }
+
+          .goals-heading {
+            margin-left: 24px; /* indent heading manually */
+            margin-right: 24px;
           }
 
           .goals-card {
             border-radius: 0 80px 0 0;
-            padding: 48px 24px 60px 24px;
+            padding: 48px 32px 60px 24px;
             margin-left: 0;
-            width: 100%;
             margin-right: 0;
+            width: 100%; /* full width, no gap */
           }
 
           .goals-card p {
@@ -79,7 +88,10 @@ export default function Goals() {
 
         <div className="goals-card">
           <p>
-            This is the space to introduce visitors to the business or brand. Briefly explain who&apos;s behind it, what it does and what makes it unique. Share its core values and what this site has to offer.
+         To make gadget access easier through financing and protection.
+ To build a trusted platform that helps merchants close more gadget sales through smarter distribution, financing, and protection.
+
+  This is the space to introduce visitors to the business or brand. Briefly explain who&apos;s behind it, what it does and what makes it unique. Share its core values and what this site has to offer.
           </p>
         </div>
       </section>

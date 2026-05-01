@@ -35,7 +35,7 @@ export default function Services() {
   },
   {
     number: '02',
-    title: 'Shop Insurance',
+    title: 'Screen Damage Cover',
     description:
       "Phones are one of the most used and most exposed devices in everyday life. Covapadi gives customers access to protection that helps cover screen damage for eligible devices, making repair-related stress easier to manage.",
   },

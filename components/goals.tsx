@@ -87,11 +87,8 @@ export default function Goals() {
         </h2>
 
         <div className="goals-card">
-          <p>
-         To make gadget access easier through financing and protection.
- To build a trusted platform that helps merchants close more gadget sales through smarter distribution, financing, and protection.
+          <p>Covapadi exists to make gadget protection simpler, more accessible, and easier to understand. We believe insurance should feel practical, not stressful. By building a clearer and more trusted path to protection, we are helping customers protect the devices they use for work, business, communication, and everyday life.
 
-  This is the space to introduce visitors to the business or brand. Briefly explain who&apos;s behind it, what it does and what makes it unique. Share its core values and what this site has to offer.
           </p>
         </div>
       </section>

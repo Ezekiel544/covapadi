@@ -7,52 +7,52 @@ export default function FAQ() {
 
 const faqs = [
   {
-    question: 'What devices can customers buy through Covapadi?',
-    answer: 'Covapadi is focused on gadgets such as phones, laptops, tablets, and other eligible devices. The exact device categories available will depend on the merchant and the financing or protection options connected to the transaction.',
+    question: 'What devices are covered under Covapadi\'s plans?',
+    answer: 'Coverage depends on the selected protection plan. In general, Covapadi is focused on eligible gadgets such as phones, laptops, tablets, and other approved personal devices.',
   },
   {
-    question: 'How does Covapadi work?',
-    answer: 'Covapadi helps merchants connect customers to gadget financing and protection in one process. Instead of handling these as separate steps, the customer can move through a clearer and more guided journey that makes it easier to complete the purchase.',
+    question: 'What does Covapadi currently cover?',
+    answer: 'Covapadi currently provides access to protection for eligible devices against screen damage and liquid damage, depending on the selected plan.',
   },
   {
-    question: 'Does Covapadi provide the financing directly?',
-    answer: 'Covapadi works as the distribution and access layer. Financing is provided through partner-backed arrangements connected to the purchase flow, while Covapadi helps make the process easier for merchants and customers.',
+    question: 'Does Covapadi cover theft?',
+    answer: 'No. Covapadi\'s current protection does not cover theft.',
   },
   {
-    question: 'Is protection included in the process?',
-    answer: 'Protection can be included as part of the gadget purchase journey, depending on the product structure and merchant setup. Customers will be shown the relevant details clearly during the process.',
+    question: 'How do I get covered?',
+    answer: 'You can begin the process through Covapadi\'s platform by submitting the required device and customer information and selecting the available protection option for your eligible gadget.',
   },
   {
-    question: 'How do I file a claim if my device is damaged or stolen?',
-    answer: 'Claims can be initiated by following the support and claims process attached to the protection plan connected to the purchase. This usually involves providing device details, customer information, and the reason for the claim, along with any required supporting documents.',
+    question: 'How do I file a claim if my device is damaged?',
+    answer: 'Claims can be initiated by following the support and claims process attached to your selected protection plan. This may require your policy details, device information, and a description of the incident.',
   },
   {
     question: 'How long does it take to process a claim?',
-    answer: 'Claim timelines depend on the type of claim, the plan terms, and the completeness of the information submitted. Once all required details are provided, the claim will be reviewed according to the applicable process.',
+    answer: 'Claim timelines depend on the information provided and the review process attached to the selected plan. Once all required details are submitted, the claim will be reviewed accordingly.',
   },
   {
-    question: 'Is there a waiting period before protection becomes active?',
-    answer: 'The start date of protection depends on the terms of the selected plan. Any activation timeline, waiting period, or related condition will be shown clearly before completion.',
+    question: 'Is there a waiting period before my coverage becomes active?',
+    answer: 'The activation timeline depends on the selected plan and provider terms. Any applicable waiting period or start date will be shown clearly during the coverage process.',
   },
   {
-    question: 'Can a customer access financing for more than one device?',
-    answer: 'This depends on the product structure, customer eligibility, and the terms attached to the financing arrangement. The available options will be shown during the process.',
+    question: 'Can I insure multiple devices?',
+    answer: 'This depends on the available plan structure. Some plans may apply to a single device, while others may allow additional coverage options. The available choice will be shown during the process.',
   },
   {
-    question: 'What counts as accidental damage? Does it cover water damage?',
-    answer: 'Accidental damage generally refers to sudden and unintended physical damage, such as drops, cracks, or similar incidents. Water damage may or may not be included depending on the plan. Customers should review the plan details carefully to understand what is covered and what is excluded.',
+    question: 'What counts as accidental damage?',
+    answer: 'Accidental damage refers to sudden and unintended physical damage to a device. However, Covapadi\'s current cover is focused on screen damage and liquid damage for eligible devices, based on the selected plan terms.',
   },
   {
-    question: 'What happens if a claim is rejected?',
-    answer: 'If a claim is rejected, the reason will usually be communicated based on the plan terms and the information submitted. Customers can then contact support for clarification or guidance on the next available step.',
+    question: 'What happens if my claim is rejected?',
+    answer: 'If a claim is rejected, the reason will usually be communicated based on the plan terms and the information submitted. You can then contact support for more guidance or clarification.',
   },
   {
     question: 'How do I cancel or make changes to my plan?',
-    answer: 'Any change such as cancellation or plan update depends on the terms of the protection attached to the purchase. Customers can contact support for guidance on what options are available.',
+    answer: 'Any plan update, cancellation, or change depends on the terms attached to the selected protection plan. Customers can contact support for guidance on available options.',
   },
   {
-    question: 'Important note on terms',
-    answer: 'Financing, protection, claims, activation timelines, and other terms may vary depending on the merchant, the selected device, and the applicable product terms. Customers should review all details carefully before completing a purchase.',
+    question: 'Important note on coverage terms',
+    answer: 'Please note that coverage, activation, claims handling, and policy terms may vary depending on the selected plan. Customers should review all plan details carefully before completing the process.',
   },
 ];
   return (

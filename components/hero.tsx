@@ -149,12 +149,13 @@ export default function Hero() {
           <div className="hero-left" ref={leftRef}>
             <h1 className="hero-title">
               {/* Protect Your Gadgets Anytime, Anywhere */}
-              Close gadget sales with financing and protection
+              Protect your gadgets with confidence
             </h1>
             <p className="hero-sub">
               {/* Affordable insurance for phones, laptops, and all your smart devices.
               Get peace of mind with instant coverage. */}
-              Covapadi helps merchants make gadget purchases easier by combining financing and protection in one simple flow.
+              We help people protect the phones and devices they rely on every day through a simpler and more trusted insurance experience.
+
             </p>
             <button className="hero-btn">Get Covered Now</button>
           </div>

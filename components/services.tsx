@@ -27,19 +27,31 @@ export default function Services() {
   }, []);
 
   const services = [
-    {
-      number: '01',
-      title: 'Gadgets Insurance',
-      description:
-        "This is the space to describe the service and explain how customers or clients can benefit from it. It's an opportunity to add a short description that includes relevant details, like pricing, duration, location and how to book the service.",
-    },
-    {
-      number: '02',
-      title: 'Shop Insurance',
-      description:
-        "This is the space to describe the service and explain how customers or clients can benefit from it. It's an opportunity to add a short description that includes relevant details, like pricing, duration, location and how to book the service.",
-    },
-  ];
+  {
+    number: '01',
+    title: 'Gadgets Insurance',
+    description:
+      "Covapadi helps customers access protection for eligible gadgets through a simple and guided process. Our focus is on making it easier for people to protect valuable devices they rely on every day.",
+  },
+  {
+    number: '02',
+    title: 'Shop Insurance',
+    description:
+      "Phones are one of the most used and most exposed devices in everyday life. Covapadi gives customers access to protection that helps cover screen damage for eligible devices, making repair-related stress easier to manage.",
+  },
+  {
+    number: '03',
+    title: 'Liquid Damage Cover',
+    description:
+      "Liquid damage can happen unexpectedly and become expensive fast. Covapadi helps customers access protection for eligible devices where liquid damage is included under the selected plan.",
+  },
+  {
+    number: '04',
+    title: 'Claims Support',
+    description:
+      "We are focused on making the support process clearer and easier to understand. From questions about coverage to help with claims-related steps, Covapadi is built around a smoother customer experience.",
+  },
+];
 
   return (
     <>

@@ -42,11 +42,9 @@ export default function About() {
   }, []);
 
  const paragraphs = [
-  `Every day, people want to buy phones, laptops, tablets, and other valuable gadgets that support their work, business, communication, and daily life. But many customers cannot always complete the full cost of purchase at once, and many merchants lose sales because of that gap.`,
-  `At the same time, protection is often treated as a separate and confusing process, even though these gadgets are important tools people rely on every day. Covapadi exists to help close that gap.`,
-  `We are building a platform that helps merchants sell more gadgets by combining financing and protection into a simpler customer journey. Instead of making customers figure things out through separate systems, Covapadi is focused on a smoother and more practical experience.`,
-  `Our platform helps buyers access gadgets more easily while adding protection inside the process — so nothing feels disconnected or out of reach.`,
-  `Our goal is to help more merchants close sales and help more customers access the gadgets they need through a process that feels clear, practical, and easy from start to finish.`,
+  `Covapadi is a microinsurance distribution platform focused on making gadget protection easier to access in Nigeria. We are building around a simple idea: people depend on their gadgets every day for work, business, communication, and daily life, so protecting those devices should not feel confusing or out of reach.`,
+  `Our goal is to make insurance more practical, more understandable, and easier to access through a smoother customer experience. Instead of making protection feel too technical or disconnected from real life, Covapadi is focused on helping customers get covered in a way that feels clear, simple, and trustworthy.`,
+  `We are starting with gadget protection because phones and devices are some of the most important tools people use every day. By improving how protection is distributed and experienced, Covapadi is helping more people protect what matters to them most.`,
 ];
 
   return (

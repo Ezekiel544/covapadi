@@ -16,7 +16,7 @@ export default function Footer() {
               <span className="font-bold text-lg">Covapadi</span>
             </div>
             <p className="text-primary-foreground/70 text-sm leading-relaxed max-w-xs">
-           Covapadi is a microinsurance distribution platform making gadget protection more accessible in Nigeria.
+          Covapadi is not an insurance provider. We partner with licensed insurance companies to make gadget protection more accessible, helping them reach customers through a simpler and more user-friendly experience.
 
             </p>
           </div>

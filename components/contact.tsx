@@ -204,7 +204,7 @@ export default function ContactAndFooter() {
           color: rgba(255,255,255,0.6);
           line-height: 1.6;
           margin: 0 0 20px 0;
-          max-width: 260px;
+          // max-width: 260px;
         }
 
         .footer-socials {
@@ -341,7 +341,7 @@ export default function ContactAndFooter() {
                   <NextImage src={Logo} alt="Covapadi Logo" width={100} height={34} priority />
                 </a>
               </div>
-              <p className="footer-desc">Get reliable protection for your gadget against everyday risks.</p>
+              <p className="footer-desc">Covapadi is not an insurance provider. We partner with licensed insurance companies to make gadget protection more accessible, helping them reach customers through a simpler and more user-friendly experience.</p>
               <div className="footer-socials">
                 <a href="https://www.instagram.com/covapadi">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

@@ -34,17 +34,17 @@ export default function Testimonials() {
     {
       name: 'Anthony Yusuf',
       image: Fatherone,
-      quote: "This is the space to share a review from one of the business's clients or customers.",
+      quote: "I never thought insuring my phone could be this straightforward. Covapadi made it feel less like insurance and more like common sense.",
     },
     {
       name: 'Robert ola',
       image: Youngman,
-      quote: "This is the space to share a review from one of the business's clients or customers.",
+      quote: "My phone is how I run my business. Knowing it's protected gives me peace of mind I didn't even know I needed.",
     },
     {
       name: 'Ella okoye',
       image: Woman,
-      quote: "This is the space to share a review from one of the business's clients or customers.",
+      quote: "Finally, something built for people like me. No complicated terms, no confusion — just real protection for my device.",
     },
   ];
 
